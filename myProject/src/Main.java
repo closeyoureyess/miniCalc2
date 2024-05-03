@@ -9,49 +9,75 @@ public class Main {
         int counter = 0;
         String typeOperations;
         MathOperations mathOperations = new MathOperations();
+        OtherMethods otherMethods = new OtherMethods();
         Scanner scanner = new Scanner(System.in);
 
         do {
             int counter2 = 1;
             System.out.println("Введите первое число: ");
             numberone = scanner.nextLine();
+            if(otherMethods.exitProgramm(numberone) == true){
+                scanner.close();
+                break;
+            }
             System.out.println("Введите тип операции: ");
             typeOperations = scanner.nextLine();
+            if(otherMethods.exitProgramm(typeOperations) == true){
+                scanner.close();
+                break;
+            }
             if (typeOperations.equals("*")) {
                 System.out.println("Введите второе число: ");
                 numbertwo = scanner.nextLine();
+                if(otherMethods.exitProgramm(numbertwo) == true){
+                    scanner.close();
+                    break;
+                };
                 intNumberone = Integer.parseInt(numberone);
                 intNumbertwo = Integer.parseInt(numbertwo);
                 System.out.println("Произведение чисел равняется: " + mathOperations.multiplicationMethod(intNumberone, intNumbertwo));
                 counter = counter + counter2;
+                scanner.close();
             } else if (typeOperations.equals("+")) {
                 System.out.println("Введите второе число: ");
                 numbertwo = scanner.nextLine();
+                if(otherMethods.exitProgramm(numbertwo) == true){
+                    scanner.close();
+                    break;
+                }
                 intNumberone = Integer.parseInt(numberone);
                 intNumbertwo = Integer.parseInt(numbertwo);
                 System.out.println("Сумма чисел равна: " + mathOperations.sumMethod(intNumberone, intNumbertwo));
                 counter = counter + counter2;
+                scanner.close();
             } else if (typeOperations.equals(":")) {
                 System.out.println("Введите второе число: ");
                 numbertwo = scanner.nextLine();
+                if(otherMethods.exitProgramm(numbertwo) == true){
+                    scanner.close();
+                    break;
+                }
                 intNumberone = Integer.parseInt(numberone);
                 intNumbertwo = Integer.parseInt(numbertwo);
                 System.out.println("Результат деления равен: " + mathOperations.divisionMethod(intNumberone, intNumbertwo));
                 counter = counter + counter2;
+                scanner.close();
             } else if (typeOperations.equals("-")) {
                 System.out.println("Введите второе число: ");
                 numbertwo = scanner.nextLine();
+                if(otherMethods.exitProgramm(numbertwo) == true){
+                    scanner.close();
+                    break;
+                }
                 intNumberone = Integer.parseInt(numberone);
                 intNumbertwo = Integer.parseInt(numbertwo);
                 System.out.println("Результат вычитания равен: " + mathOperations.substractionMethod(intNumberone, intNumbertwo));
                 counter = counter + counter2;
+                scanner.close();
             } else {
                 System.out.println("Ошибка");
-                counter2 = counter;
-                System.out.println("Счетчик: " + counter2);
             }
         } while (counter == 0);
-        scanner.close();
     }
 }
 

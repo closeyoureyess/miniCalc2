@@ -15,3 +15,13 @@ public class MathOperations {
         return once / twice;
     }
 }
+
+/*public void exitProgramm(){
+        if(numberone.equals("Exit")){
+            scanner.close();
+            break;
+        } else if(numberone.equals("Выйти")){
+            scanner.close();
+            break;
+        }
+    }*/
