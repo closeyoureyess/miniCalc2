@@ -6,6 +6,7 @@ public enum MathTypeOperations {
     private String type;
 
     MathTypeOperations(String type) {
+
         this.type = type;
     }
 

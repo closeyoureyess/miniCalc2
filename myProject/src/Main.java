@@ -4,7 +4,6 @@ public class Main {
     public static void main(String[] args) {
         String numberone;
         String numbertwo;
-        int result;
         int counter = 0;
         String typeOperations;
         OtherMethods otherMethods = new OtherMethods();
