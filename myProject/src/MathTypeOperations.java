@@ -10,23 +10,7 @@ public enum MathTypeOperations {
         this.type = type;
     }
 
-    public String getMathTypeOperations() {
+    public String getType() {
         return type;
-    }
-
-    public int divisionMethod(int once, int twice) {
-        return once / twice;
-    }
-
-    public int multiplicationMethod(int once, int twice) {
-        return once * twice;
-    }
-
-    public int sumMethod(int once, int twice) {
-        return once + twice;
-    }
-
-    public int substractionMethod(int once, int twice) {
-        return once - twice;
     }
 }
