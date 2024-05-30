@@ -1,3 +1,5 @@
+package main;
+
 public class GenExeptionCalc {
     private final String zero = "0";
     public String checkZero(String numbertwo){

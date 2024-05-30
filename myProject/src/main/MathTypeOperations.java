@@ -1,3 +1,5 @@
+package main;
+
 public enum MathTypeOperations {
     MULTIPLICATION("*"),
     SUM("+"),
@@ -6,7 +8,6 @@ public enum MathTypeOperations {
     private String type;
 
     MathTypeOperations(String type) {
-
         this.type = type;
     }
 

@@ -1,5 +1,5 @@
-import java.io.FileReader;
-import java.io.IOException;
+package main;
+
 import java.util.Scanner;
 
 public class Main {
@@ -82,7 +82,7 @@ public class Main {
                 System.out.println((char)c);
             }
         }
-        catch (DivideByZeroExeption a){
+        catch (main.DivideByZeroExeption a){
             System.out.println("Деление на 0 невозможно!");
         }*/
 
@@ -94,7 +94,7 @@ public class Main {
         /*int numberone;
         int numbertwo;
         String typeOperations;
-        MathOperations mathOperations = new MathOperations();
+        main.MathOperations mathOperations = new main.MathOperations();
         Scanner scanner = new Scanner(System.in);
 
         while (true) {

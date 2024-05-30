@@ -1,3 +1,5 @@
+package main;
+
 public class MathOperations {
     public int multiplicationMethod(int once, int twice) {
         return once * twice;
